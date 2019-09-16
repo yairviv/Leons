@@ -1,0 +1,10 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+.mainPage{
+    background-attachment: fixed;
+    background-color: #252525;
+    background-image: url("../assets/img/shared/DSC_3669.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

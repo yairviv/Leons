@@ -1,0 +1,16 @@
+
+.photosWrapper{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    padding: 0 30px;
+}
+
+.photo{
+    flex: 1 0 20%; /* explanation below */
+    margin: 5px;
+    margin-top: 30px;
+    border: 2px solid;
+    border-color: black;
+
+}

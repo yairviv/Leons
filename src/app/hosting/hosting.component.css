@@ -1,0 +1,21 @@
+.template{
+    height: 100%;
+    margin: 0px;
+    min-height: 100vh; 
+}
+
+.paragraph{
+    background-color:rgba(0, 0, 0, 0.5);
+    white-space: pre-wrap;   
+}
+
+.paragraphText{
+    text-align: center;
+    color:white;
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.paragraphWrapper{
+    margin-top: 75px;
+}
