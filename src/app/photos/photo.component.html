@@ -1,1 +1,17 @@
-<img src="{{finalPath}}" class="img-fluid" alt="Responsive image">
+<a (click)="show()">
+    <img src="{{finalPath}}" class="img-fluid" alt="Responsive image">
+</a>
+
+
+
+<div [style.display]="showModal ? 'block' : 'none'" class="modal" id="imagemodal" tabindex="-1" role="dialog"
+    aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="bigPhotoWrapper"
+        style="text-align: -webkit-center;  background-color:rgba(0, 0, 0, 0.5); height: 100%;">
+        <img src="{{finalPath}}" id="imagepreview" style="width: 625px; height: 625px; margin-top: 10%;">
+
+        <div>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="hide()">Close</button>
+        </div>
+    </div>
+</div>

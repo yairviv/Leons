@@ -1,17 +1,25 @@
 import { Component, Input, OnInit } from '@angular/core';
-import {IPhoto} from './IPhoto';
+import { IPhoto } from './IPhoto';
 
 @Component({
-   selector: 'pm-photo',
-   templateUrl: './photo.component.html'
+    selector: 'pm-photo',
+    templateUrl: './photo.component.html'
 })
 export class photoComponent implements OnInit {
+    showModal: boolean;
+    show() {
+        this.showModal = true; // Show-Hide Modal Check
 
-@Input() photo: IPhoto;
-finalPath: string;
+    }
+    //Bootstrap Modal Close event
+    hide() {
+        this.showModal = false;
+    }
+    @Input() photo: IPhoto;
+    finalPath: string;
 
-ngOnInit(){
-    this.finalPath = 'assets/img/'+ this.photo.imgSrc;
+    ngOnInit() {
+        this.finalPath = 'assets/img/' + this.photo.imgSrc;
 
-}
+    }
 }
