@@ -3,7 +3,8 @@ import { IPhoto } from './IPhoto';
 
 @Component({
     selector: 'pm-photo',
-    templateUrl: './photo.component.html'
+    templateUrl: './photo.component.html',
+    styleUrls: ['photo.component.css'],
 })
 export class photoComponent implements OnInit {
     showModal: boolean;
